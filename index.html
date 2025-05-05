@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | [Твоё имя]</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Я — начинающий верстальщик</h1>
+    <p>Учусь создавать красивые сайты на HTML и CSS</p>
+    <button class="contact-btn">Связаться</button>
+</header>
+
+<section class="about" data-aos="fade-up">
+    <h2>Обо мне</h2>
+    <p>Меня зовут Анзор, мне 26 лет. Я только начал путь в веб-разработке и стремлюсь стать профессионалом.</p>
+</section>
+
+<section class="projects" data-aos="fade-up">
+    <h2>Проекты</h2>
+    <ul>
+        <li>Лендинг кофейни (в процессе)</li>
+        <li>Мой первый сайт с формой</li>
+    </ul>
+</section>
+
+<section class="contact" data-aos="fade-up">
+    <h2>Свяжитесь со мной</h2>
+    <form>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Анзор</p>
+</footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
