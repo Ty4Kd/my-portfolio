@@ -50,6 +50,15 @@ section {
     gap: 20px;
 }
 
+.projects {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.about {
+    background-color: #f2f2f2;
+}
+
 .projects ul {
     padding-left: 20px;
 }
@@ -149,10 +158,15 @@ footer {
     padding: 15px;
     border-radius: 8px;
     z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .mobile-menu.active {
     display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 .mobile-menu a {
@@ -172,3 +186,4 @@ footer {
         display: none;
     }
 }
+
