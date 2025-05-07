@@ -12,7 +12,6 @@
 <body>
 
 <header>
-    <!-- ШАГ 1: Разметка бургер-меню (HTML) -->
     <div class="burger" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -68,13 +67,11 @@
     <p>&copy; 2025 Анзор</p>
 </footer>
 
-<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
 
-<!-- ШАГ 3: JavaScript (внизу index.html) -->
 <script>
     function toggleMenu() {
       document.querySelector('.mobile-menu').classList.toggle('active');
