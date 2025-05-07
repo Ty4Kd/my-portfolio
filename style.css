@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* ШАГ 5: Адаптивность с Flexbox и Grid  header/contact-btn/section/media(min)/media(max) */
 header {
     display: flex;
     flex-direction: column;
@@ -130,7 +129,6 @@ footer {
     }
 }
 
-/* ШАГ 2: Стили для меню (CSS) */
 .burger {
     display: none;
     flex-direction: column;
@@ -175,8 +173,6 @@ footer {
     margin: 5px 0;
 }
 
-
-/* ШАГ 4: Медиа-запрос (в @media) */
 @media (max-width: 768px) {
     .burger {
         display: flex;
