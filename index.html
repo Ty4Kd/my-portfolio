@@ -12,10 +12,28 @@
 <body>
 
 <header>
+    <!-- ШАГ 1: Разметка бургер-меню (HTML) -->
+    <div class="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
     <h1>Я — начинающий верстальщик</h1>
     <p>Учусь создавать красивые сайты на HTML и CSS</p>
     <button class="contact-btn">Связаться</button>
 </header>
+
+<section id="about" class="about" data-aos="fade-up">...</section>
+<section id="projects" class="projects" data-aos="fade-up">...</section>
+<section id="contact" class="contact" data-aos="fade-up">...</section>
 
 <section class="about" data-aos="fade-up">
     <h2>Обо мне</h2>
@@ -56,5 +74,12 @@
   AOS.init();
 </script>
 
+<!-- ШАГ 3: JavaScript (внизу index.html) -->
+<script>
+    function toggleMenu() {
+      document.querySelector('.mobile-menu').classList.toggle('active');
+    }
+  </script>
+  
 </body>
 </html>
